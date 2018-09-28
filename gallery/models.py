@@ -30,9 +30,9 @@ class Category(models.Model):
 class Image(models.Model):
     image = models.ImageField(upload_to = 'gallery/')
     image_name = models.CharField(max_length =25)
-    image_description = models.CharField(max_length =144)
+    image_description = models.TextField(max_length =144)
     image_location = models.ForeignKey(Location)
-    image_category = models.ForeignKey(Category)
+    image_category = models.ManyToManyField(Category)
 
     def __str__(self):
         return self.image_name
@@ -48,11 +48,15 @@ class Image(models.Model):
 
     @classmethod
     def search_by_category(cls,search_term):
-        gallery = cls.objects.filter(image_name__icontains=search_term)
+        gallery = cls.objects.filter(image_category__name__icontains=search_term)
         return gallery      
 
     @classmethod
     def retrive_all_images(cls):
         images = Image.objects.all()
-        return images      
+        return images
 
+    @classmethod
+    def get_image_by_id(cls, id):
+        images = cls.objects.get(pk=id)
+        return images

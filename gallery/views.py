@@ -5,9 +5,9 @@ from .models import Image
 
 # Create your views here.
 def welcome(request):
-    posts=Image.objects.all()
+    images=Image.objects.all()
 
-    return render(request, 'welcome.html',{'posts':posts})
+    return render(request, 'welcome.html',{'images':images})
 
 def gallery(request):
     return render(request, 'gallery.html')
