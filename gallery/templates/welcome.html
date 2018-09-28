@@ -1,15 +1,14 @@
 {% extends 'base.html' %}
-
 {% block content %}
-
 {{block.super}}
 
 <div class="container-fluid">
 <!-- displaying images -->
 {% for post in posts %} 
-
+    <div class="row">
+        <div class="col-md-4">
     <!-- modal button-->
-    <button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal"><img src="{{post.image.url }}" alt="" width="250" height="250"></button> <br>
+    <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal"><img src="{{post.image.url }}" alt="" width="250" height="250"></button> <br>
         
     <!-- modal -->
     <div class="modal fade" id="myModal" role="dialog">
@@ -32,6 +31,8 @@
           
         </div>
       </div>
+        </div>
+    </div>
 
 {% endfor %}
 </div>
