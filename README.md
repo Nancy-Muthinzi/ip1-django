@@ -1,55 +1,36 @@
 # PHOTO GALLERY
-This is a personal gallery application that displays my photos for others to see.
+This is a personal gallery application that displays my photos for others to see and gives a brief description of each image.
 
-## Getting Started
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+#### A user of the application will be able to:
+- View different photos that interest me.
+- Click on a single photo to expand it and also view the details of the photo.
+- Search for different categories of photos.
+- Copy a link to the photo to share with friends.
+- View photos based on the location they were taken.
 
-### Prerequisites
-What things you need to install the software and how to install them
+## Setup/Installation Requirements
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
+- go to my repo on github and clone it - https://github.com/Nancy-Muthinzi/ip1-django.git
+- create a folder on your computer, create and activate a virtual environment
+- download django and install all the necessary requirements to be able to run the app
+- finally do a ./manage.py runserver to be able to run it on your browser
 
-Give examples
-Installing
-A step by step series of examples that tell you how to get a development env running
+### Technologies used
+- Python3.6
+- Django 1.11
+- HTML
+- CSS
+- Bootstrap3
 
-Say what the step will be
-
-Give the example
-And repeat
-
-until finished
-End with an example of getting some data out of the system or using it for a little demo
-
-### Running the tests
-Explain how to run the automated tests for this system
-
-Break down into end to end tests
-Explain what these tests test and why
-
-Give an example
-And coding style tests
-Explain what these tests test and why
-
-Give an example
-Deployment
-Add additional notes about how to deploy this on a live system
-
-### Built With
-Django - The web framework used
-Maven - Dependency Management
-ROME - Used to generate RSS Feeds
-Contributing
-Please read CONTRIBUTING.md for details on our code of conduct, and the process for submitting pull requests to us.
-
-### Versioning
-We use SemVer for versioning. For the versions available, see the tags on this repository.
+## Known Bugs, Support & Contact Information
+This is still a work in progress and will continue to be worked on. But for any issues encountered and any contributions to the code or design, kindly reach out to me on my email address: nanciekathini@gmail.com.
 
 ### Authors
-Nancy Muthinzi - Initial work
+Nancy Muthinzi
 
-License
+### License
 This project is licensed under the MIT License - see the LICENSE.md file for details
 
-Acknowledgments
-Hat tip to anyone whose code was used
-Inspiration
-etc
+### Acknowledgments/Credits
+- Hat tip to Moringa School staff, technical mentors and fellow students for their support and guidance
+- StackOverflow, W3Schools and other websites for their useful information
