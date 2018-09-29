@@ -30,7 +30,7 @@ class Category(models.Model):
 class Image(models.Model):
     image = models.ImageField(upload_to = 'gallery/')
     image_name = models.CharField(max_length =25)
-    image_description = models.TextField(max_length =144)
+    image_description = models.TextField(max_length =250)
     image_location = models.ForeignKey(Location)
     image_category = models.ManyToManyField(Category)
 
