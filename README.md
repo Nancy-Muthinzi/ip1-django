@@ -1,5 +1,5 @@
 # PHOTO GALLERY
-!![picture](./gallery/static/css/gallery.css)
+!(gallery/static/css/gallery.css)
 
 This is a personal gallery application that displays my photos for others to see and gives a brief description of each image.
 
