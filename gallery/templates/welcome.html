@@ -38,13 +38,13 @@
                 {% for category in post.image_category.all %}
                 <p>{{ category.name }}</p>
                 {% endfor %}
-        
+
                 {% for location in post.image_location.all %}
                 <p>{{ location.name }}</p>
                 {% endfor %}
             </div>
 
-        
+
             <div class="modal-footer">
                 <button type="button" class="btn btn-danger" onclick="copyToClipboard('img{{photo.id}}')">Copy Link</button>
                 <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
