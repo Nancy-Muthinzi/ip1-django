@@ -17,7 +17,8 @@ from decouple import config,Csv
 
 MODE=config("MODE", default="dev")
 SECRET_KEY = config('SECRET_KEY')
-DEBUG = config('DEBUG', default=False, cast=bool)
+# DEBUG = config('DEBUG', default=False, cast=bool)
+DEBUG = True
 # development
 if config('MODE')=="dev":
    DATABASES = {
@@ -58,7 +59,7 @@ SECRET_KEY = '3w2oef&r4qwx3gq1fijcy^_g&^wyx$7zpe!uy2kj4sk9kepyae'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['herokuapp.com']
+ALLOWED_HOSTS = ['nanciekathini-gallery.herokuapp.com']
 
 # Application definition
 
