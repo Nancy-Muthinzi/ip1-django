@@ -12,6 +12,7 @@
             <!-- modal button -->
             <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal{{post.id}}">
                 <img src="{{post.image.url }}" alt="" width="250" height="250">
+                <p>{{ post.image_name }}</p>
             </button>
             <br>
 
@@ -36,7 +37,8 @@
 
             <div class="modal-body">
                 {% for category in post.image_category.all %}
-                <p>{{ category.name }}</p>
+                <p>Category: {{ category.name }}</p>
+                <p>Location: {{ post.image_location }}</p>
                 {% endfor %}
             </div>
 
